@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sticky Navbar</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji|Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="works.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()) {
+                $('nav').addClass('scroll');
+                $('.nav-container').addClass('cont-scroll');
+            }
+            else {
+                $('nav').removeClass('scroll');
+                $('.nav-container').removeClass('cont-scroll');
+            }
+        })
+    </script>
+</head>
+<body>
+    <!-- START - NAVBAR -->
+    <nav class="desktop-nav">
+        <div class="nav-container">
+            <a href="https://www.google.com/" class="logo">
+                <span class="first">&#60;</span>
+                <span>&#47;</span>
+                <span>k</span>
+                <span class="none one">i</span>
+                <span class="none two">t</span>
+                <span class="none three">s</span>
+                <span class="last">&#62;</span>
+                </a>
+            
+            <ul class="desktop-list">
+                <li><a href="Index.html" class="underline">Home</a></li>
+                <li><a href="about.html" class="underline">About</a></li>
+                <li><a href="service.html" class="underline">Service</a></li>
+                <li><a href="works.html" class="underline">Works</a></li>
+                <li><a href="" class="underline">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <input id="nav-check" type="checkbox" />
+    <label for="nav-check" class="bars">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+    </label>
+    <div class="nav-overlay">
+        <ul class="mobile-list">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- END - NAVBAR -->
+
+    <!-- START - CONTENT -->
+    <div id="filter-container">
+        <h1>My Works</h1>
+        <button class="filter-btn active" onclick="filterSelection('all')">All</button>
+        <button class="filter-btn" onclick="filterSelection('main')">Main Projects</button>
+        <button class="filter-btn" onclick="filterSelection('early')">College Projects</button>
+        <button class="filter-btn" onclick="filterSelection('snippets')">Snippets</button>
+    </div>
+    <section class="works">
+        <div class="works-container main">
+            <h2>Project 1</h2>
+            <img src="projects.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+        <div class="works-container main">
+            <h2>Project 2</h2>
+            <img src="projects.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+        <div class="works-container early">
+            <h2>Project 3</h2>
+            <img src="projects2.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+        <div class="works-container snippets">
+            <h2>Project 4</h2>
+            <img src="projects3.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+        <div class="works-container main">
+            <h2>Project 5</h2>
+            <img src="projects.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+        <div class="works-container early">
+            <h2>Project 6</h2>
+            <img src="projects2.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+        <div class="works-container snippets">
+            <h2>Project 7</h2>
+            <img src="projects3.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+        <div class="works-container early">
+            <h2>Project 8</h2>
+            <img src="projects2.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+        <div class="works-container early">
+            <h2>Project 9</h2>
+            <img src="projects2.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+        <div class="works-container snippets">
+            <h2>Project 10</h2>
+            <img src="projects3.jpg" alt="">
+            <p><b>Description:</b> A project made by me.</p>
+            <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+            <p><b>Live Site:</b> <a href="https://www.google.com/" target="_blank"> <u>https://www.google.com/</u></a></p>
+        </div>
+    </section>
+    <div class="footer"></div>
+    <!-- END - CONTENT -->
+</body>
+</html>
+<script>
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("works-container");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("filter-container");
+var btns = btnContainer.getElementsByClassName("filter-btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .text-container {
+        position: relative;
+        border: 1px solid black;
+        width: auto;
+        height: 100px;
+    }
+    .one, .two, .three {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        width: auto;
+    }
+    .one {
+        animation: oneanim 24.0s infinite;
+        opacity: 0;
+    }
+    .two {
+        animation: twoanim 24.0s infinite;
+        opacity: 0;
+    }
+    .three {
+        animation: threeanim 24.0s infinite;
+        opacity: 0;
+    }
+
+    @keyframes oneanim {0% {opacity: 0;}3% {opacity: 1;}30% {opacity: 1;}33% {opacity: 0;}97% {opacity: 0}}
+    @keyframes twoanim {0% {opacity: 0;}34% {opacity: 0;}37% {opacity: 1;}65% {opacity: 1;}68% {opacity: 0}}
+    @keyframes threeanim {0% {opacity: 0;}69% {opacity: 0;}72% {opacity: 1;}97% {opacity: 1;}100% {opacity: 0}}
+    .box-container {
+        width: 100%;
+        border: 1px solid black;
+        min-height: 100vh;
+        background-color: aqua
+    }
+    .hone {
+        margin-top: 5vmin;
+        border: 1px solid black;
+    }
+    h1 {
+        font-size: 5vmin;
+    }
+</style>
+<body>
+    <div class="box-container">
+    <div class="hone">
+        <h1>HELLO WORLD</h1>
+    </div> 
+    <div class="hone">
+        <h1>HELLO WORLD</h1>
+    </div>
+    <div class="hone">
+        <h1>HELLO WORLD</h1>
+    </div>
+    <div class="hone">
+        <h1>HELLO WORLD</h1>
+    </div>
+    <div class="hone">
+        <h1>HELLO WORLD</h1>
+    </div>   
+    <div class="hone">
+        <h1>HELLO WORLD</h1>
+    </div> 
+    <div class="hone">
+        <h1>HELLO WORLD</h1>
+    </div> 
+    
+    
+    <div class="text-container hone">
+        <div class="one">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="two">
+            <p> Debitis, itaque maiores, enim quae placeat voluptatem quas eius dolorum soluta</p>
+        </div>
+        <div class="three">
+            <p> molestiae commodi ab veniam odio ex iste voluptatibus natus quos nisi!</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

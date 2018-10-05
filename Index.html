@@ -4,36 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sticky Navbar</title>
+    <title>Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji|Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $(window).on('scroll',function(){
             if($(window).scrollTop()) {
-                $('nav').addClass('black');
+                $('nav').addClass('scroll');
             }
             else {
-                $('nav').removeClass('black');
+                $('nav').removeClass('scroll');
             }
         })
     </script>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="logo-white.png" alt="">
+    <!-- START - NAVBAR -->
+    <nav class="desktop-nav">
+        <div class="nav-container">
+            <a href="https://www.google.com/" class="logo">
+                <span class="first">&#60;</span>
+                <span>&#47;</span>
+                <span>k</span>
+                <span class="none one">i</span>
+                <span class="none two">t</span>
+                <span class="none three">s</span>
+                <span class="last">&#62;</span>
+                </a>
+            
+            <ul class="desktop-list">
+                <li><a href="Index.html" class="underline">Home</a></li>
+                <li><a href="about.html" class="underline">About</a></li>
+                <li><a href="service.html" class="underline">Service</a></li>
+                <li><a href="works.html" class="underline">Works</a></li>
+                <li><a href="" class="underline">Contact Us</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
+    </nav>
+    <input id="nav-check" type="checkbox" />
+    <label for="nav-check" class="bars">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+    </label>
+    <div class="nav-overlay">
+        <ul class="mobile-list">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="works.html">Works</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
-    </nav>
-    <section class="sec1"></section>
-    <section class="sec2"></section>
-    <section class="sec3"></section>
-    <section class="sec4"></section>
-    <section class="sec5"></section>
+    </div>
+    <!-- END - NAVBAR -->
+
+    <!-- START - CONTENT -->
+    <section class="home">
+        <div class="home-content">
+            <h1>HELLO WORLD!</h1>
+            <div class="text-container">
+                <div class="text-one">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="text-two">
+                    <p>Debitis, itaque maiores, enim quae placeat voluptatem quas eius dolorum soluta</p>
+                </div>
+                <div class="text-three">
+                    <p>molestiae commodi ab veniam odio ex iste voluptatibus natus quos nisi!</p>
+                </div>
+            </div>
+            <button>Click Here</button>
+        </div>
+        <div class="home-footer"></div>
+    </section>
+    <!-- END - CONTENT -->
 </body>
 </html>
+

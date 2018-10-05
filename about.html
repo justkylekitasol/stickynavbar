@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sticky Navbar</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji|Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()) {
+                $('nav').addClass('scroll');
+                $('.nav-container').addClass('cont-scroll');
+            }
+            else {
+                $('nav').removeClass('scroll');
+                $('.nav-container').removeClass('cont-scroll');
+            }
+        })
+    </script>
+</head>
+<body>
+    <!-- START - NAVBAR -->
+    <nav class="desktop-nav">
+        <div class="nav-container">
+            <a href="https://www.google.com/" class="logo">
+                <span class="first">&#60;</span>
+                <span>&#47;</span>
+                <span>k</span>
+                <span class="none one">i</span>
+                <span class="none two">t</span>
+                <span class="none three">s</span>
+                <span class="last">&#62;</span>
+                </a>
+            
+            <ul class="desktop-list">
+                <li><a href="Index.html" class="underline">Home</a></li>
+                <li><a href="about.html" class="underline">About</a></li>
+                <li><a href="service.html" class="underline">Service</a></li>
+                <li><a href="works.html" class="underline">Works</a></li>
+                <li><a href="" class="underline">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <input id="nav-check" type="checkbox" />
+    <label for="nav-check" class="bars">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+    </label>
+    <div class="nav-overlay">
+        <ul class="mobile-list">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- END - NAVBAR -->
+
+    <!-- START - CONTENT -->
+    <section class="about">
+        <!-- <h1>About..</h1> -->
+        <div class="profile-pic">
+            <div class="image">
+                <p>John Doe</p>
+            </div>
+            <button>Click Here!</button>
+        </div>
+        <div class="profile-head">
+            <h2>Header</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem dolore soluta itaque delectus, consectetur doloribus animi laudantium dolorum corrupti expedita harum ipsam non fuga dicta incidunt autem deserunt iusto!</p>
+        </div>
+        <div class="profile-main">
+            <h2>Main 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem dolore soluta itaque delectus, consectetur doloribus animi laudantium dolorum corrupti expedita harum ipsam non fuga dicta incidunt autem deserunt iusto!</p>
+            <h2>Main 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem dolore soluta itaque delectus, consectetur doloribus animi laudantium dolorum corrupti expedita harum ipsam non fuga dicta incidunt autem deserunt iusto!</p>
+            <h2>Main 3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem dolore soluta itaque delectus, consectetur doloribus animi laudantium dolorum corrupti expedita harum ipsam non fuga dicta incidunt autem deserunt iusto!</p>
+        </div>
+    </section>
+    <div class="footer"></div>
+    <!-- END - CONTENT -->
+</body>
+</html>
+
